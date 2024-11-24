@@ -1,0 +1,41 @@
+﻿Đề bài:
+
+*	Ở trường CĐKT Cao Thắng, sinh viên ngành công nghệ thông tin được họcở 2 phòng học: Phòng thưc hành và Phòng lý thuyết. Mỗi phòng học ều có các thông tin sau: Tòa nhà ( char ), số tầng, số thứ tự phòng.
+	- Phòng Lý Thuyết có them thông tin số bàn được trang bị. Biết mỗi bàn có thể chứ tối đa 3 sinh viên.
+	- Phòng thực hành chứa them thông tin số máy vi tính được sử dung bởi tối đa 1 sinh viên.
+
+#	Dạng câu hỏi cơ bản:
+
+1. Tính tổng số phòng trong danh sách dsPhong.
+
+2. Tìm và in ra các phòng có sức chứa bằng sucChua cho trước, và in ra theo theo thứ tự Toa Nha kèm theo in Phòng Lý thuyết sau ó tới Phòng Thực hành.
+
+3. Đếm số lượng phòng theo loại (LT cho Lý Thuyết, TH cho Thực Hành).
+
+4. Xuất danh sách các phòng ở tầng soTang cho trước.
+
+#	Dạng câu hỏi trung cấp:
+
+5. Tìm phòng có sức chứa lớn nhất trong một loại phòng (LT cho Lý Thuyết, TH cho Thực Hành).
+
+6. Sắp xếp danh sách dsPhong theo thứ tự tăng dần của sức chứa.
+
+7. Xóa phòng khỏi danh sách dsPhong dựa trên thuộc tính (ví dụ: tên phòng hoặc tầng).
+
+8. Cập nhật sức chứa của phòng dựa trên thuộc tính (ví dụ: tên phòng hoặc tầng).
+
+9. Đếm số lượng phòng trong một tòa nhà cụ thể.
+
+10. Tính tổng sức chứa của tất cả các phòng trong một tòa nhà cho trước.
+
+#	Dạng câu hỏi nâng cao:
+
+11. Tạo báo cáo thống kê chi tiết về số lượng phòng và sức chứa của từng loại phòng (Lý Thuyết, Thực Hành) trong từng tòa nhà.
+
+12. Tìm tất cả các phòng có sức chứa lớn hơn một giá trị cụ thể và xuất danh sách các phòng đó theo thứ tự tăng dần của sức chứa.
+
+13. Viết hàm sao chép dữ liệu phòng từ một danh sách dsPhong sang một danh sách khác mà không cần sử dụng các phương thức copy constructor của đối tượng.
+
+14. Viết hàm tính toán tổng diện tích của tất cả các phòng trong danh sách dsPhong (giả sử mỗi phòng có thông tin về diện tích).
+
+15. Viết hàm lọc và xuất danh sách các phòng có sức chứa nằm trong khoảng cho trước (ví dụ: từ 20 đến 50 người).

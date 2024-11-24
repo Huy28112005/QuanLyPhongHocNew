@@ -536,4 +536,6 @@ public:
 		}
 		return listNew;
 	}
+	//Viết hàm tính toán tổng diện tích của tất cả các phòng trong danh sách dsPhong (giả sử mỗi phòng có thông tin về diện tích).
+
 };
