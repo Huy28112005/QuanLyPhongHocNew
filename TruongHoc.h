@@ -536,6 +536,25 @@ public:
 		}
 		return listNew;
 	}
-	//Viết hàm tính toán tổng diện tích của tất cả các phòng trong danh sách dsPhong (giả sử mỗi phòng có thông tin về diện tích).
+	//Viết hàm tính toán tổng diện tích của 
+	//tất cả các phòng trong danh sách dsPhong (giả sử mỗi phòng có thông tin về diện tích).
 
+
+	//Viết hàm lọc và xuất danh sách các phòng có 
+	// sức chứa nằm trong khoảng cho trước (ví dụ: từ 20 đến 50 người).
+	PhongHoc** locVaXuatPhongCoSucChuaNamTrongKhoang(unsigned int kBegin, unsigned int kEnd, unsigned int& soLuongNew) const {
+		if (soLuong == 0 || kBegin > kEnd) return nullptr;
+		vector<PhongHoc*> tempList;
+		for (unsigned int i = 0; i < soLuong; ++i) {
+			unsigned int sucChua = dsPhong[i]->getSucChua();
+			if (kBegin <= sucChua && kEnd >= sucChua)
+				tempList.push_back(dsPhong[i]);
+		}
+		soLuongNew = static_cast<unsigned int>(tempList.size());
+		if (soLuongNew == 0) return nullptr;
+		PhongHoc** afterAdd = new PhongHoc * [soLuongNew];
+		for (unsigned int i = 0; i < soLuongNew; ++i)
+			afterAdd[i] = tempList[i];
+		return afterAdd;
+	}
 };

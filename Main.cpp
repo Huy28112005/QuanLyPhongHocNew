@@ -124,5 +124,26 @@ int main() {
 		cout << "\nKhong co phong nao de copy!" << rows2;
 	}
 
+	unsigned int kBegin, kEnd;
+	cout << "\nNhap doan Begin: "; cin >> kBegin;
+	cout << "\nNhap doan End: "; cin >> kEnd;
+	PhongHoc** listLocAndXuat = truongHoc.locVaXuatPhongCoSucChuaNamTrongKhoang(kBegin, kEnd, SLNew);
+	if (listLocAndXuat != nullptr) {
+		cout << "\nSo luong phong tim duoc : " << SLNew << rows2;
+		for (unsigned int i = 0; i < SLNew; ++i) {
+			listLocAndXuat[i]->xuat();
+			cout << "---------------" << rows2;
+		}
+		for (unsigned int i = 0; i < SLNew; ++i)
+		{
+			if(listLocAndXuat[i]!=nullptr)
+				delete listLocAndXuat[i];
+		}
+		delete[] listLocAndXuat;
+	}
+	else {
+		cout << "\nKhong tim thay phong nao!";
+	}
+
 	return 0;
 }
